@@ -8,13 +8,14 @@ body {
 }
 
 html {
-    height: 100%;
+    position: relative;
+    min-height: 100%;
     margin: 0;
 }
 
 body {
     height: 100%;
-    margin: 0;
+    margin: 0 0 100px;
     background-image: url(../images/round.png);
 }
 
@@ -39,7 +40,7 @@ nav {
 }
 
 header {
-    background: #ffffff;
+    background: whitesmoke;
     border: 1px solid #cccccc;
 }
 
@@ -88,15 +89,15 @@ h2 {
 
 .main {
     width: 960px;
-    background: #ffffff;
+    background: whitesmoke;
     border: 1px solid #dddddd;
     margin: 0 auto;
     margin-top: 30px;
 }
 
 #image {
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     padding: 20px;
     float: left;
 }
@@ -143,8 +144,8 @@ button {
 
 .main-1 {
     width: 960px;
-    height: 920px;
-    background: #ffffff;
+    height: 700px;
+    background: whitesmoke;
     border: 1px solid #dddddd;
     margin: 0 auto;
     margin-top: 30px;
@@ -163,7 +164,13 @@ button {
 .img-2 {
     position: relative;
     float: left;
-    padding: 35px;
+    padding: 40px;
+}
+
+.img-3 {
+    position: relative;
+    float: left;
+    padding: 40px;
 }
 
 .header-text {
@@ -173,8 +180,6 @@ button {
     color: #ffffff;
     background: #4aaaa5;
     bottom: 70PX;
-    padding: 10px;
-    z-index: 1;
 }
 
 
@@ -185,12 +190,13 @@ h4 {
 }
 
 footer {
+    position: absolute;
+    float: fixed;
+    left: 0;
+    bottom: 0;
     width: 100%;
     background: #666666;
     border-top: 8px solid #4aaaa5;
-    float: fixed;
-    padding-bottom: 0;
-    margin: 0 auto;
 }
 
 @media (max-width: 640px) {
@@ -224,6 +230,23 @@ footer {
     form {
         width: 40%;
     }
+    input,
+    .text-area {
+        width: 525px;
+    }
+    .main-1 {
+        height: 800px;
+    }
+    .img-1,
+    .img-2,
+    .img-3 {
+        display: inline;
+        margin-left: 15px;
+        padding: 0;
+    }
+    h3 {
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 768px) {
@@ -234,15 +257,49 @@ footer {
     a {
         margin-right: 40px;
     }
+    .main {
+        width: 90%;
+    }
+    p {
+        width: 100%;
+    }
+    input,
+    .text-area {
+        width: 97%;
+    }
+    .main-1 {
+        width: 90%;
+        height: 600px;
+    }
+    .img-1,
+    .img-2,
+    .img-3 {
+        display: inline;
+        margin-left: 15px;
+        padding: 0;
+    }
 }
 
 @media (max-width: 968px) {
     nav {
         display: inline-block;
-        margin: 0 auto;
+        margin-right: 25px;
     }
     h1 {
         display: inline-block;
-        margin: 0 auto;
+        margin-left: 25px;
+    }
+    .main {
+        width: 94%;
+    }
+    p {
+        width: 100%;
+    }
+    input,
+    .text-area {
+        width: 98%;
+    }
+    .main-1 {
+        width: 94%;
     }
 }
